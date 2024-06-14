@@ -1,8 +1,13 @@
 import React from 'react'
 import '../App.css'
-function TagButton() {
+function TagButton({content, children}) {
+    console.log(children);
     return (
-        <button className='btnTagButton'>tag button</button>
+        
+        <button className='btnTagButton'>
+        {content}
+        {children}
+        </button>
 
     )
 }

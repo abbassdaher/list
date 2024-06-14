@@ -1,13 +1,15 @@
 import React from 'react'
 import "../App.css"
 
-function Post() {
+function Post(props) {
+    console.log(props);
     return (
         <div>
             <div className='borderStyle textCenter'>
-                <h2 className='title-post'>this is the post title</h2>
+                {props.children}
+                <h2 className='title-post'>{props.title}</h2>
                 <hr />
-                <p className='post-body'>this is the post body</p></div>
+                <p className='post-body'>{props.paragraph}</p></div>
         </div>
     )
 }
