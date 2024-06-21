@@ -81,11 +81,17 @@
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .btnTagButton:hover {
-  background-color:#5d015f ;
+  background-color: #5d015f;
 }
 .asideStyle {
   padding: 5px 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+}
+.formStyle {
+  padding: 5px;
+}
+.submitForm{
+  margin-top: 5px;
 }

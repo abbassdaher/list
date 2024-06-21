@@ -1,5 +1,6 @@
 import React from 'react'
-import TagButton from './TagButton'
+import TagButton from '../TagButton'
+import FormRegister from './FormRegister'
 
 function Aside() {
     let content = [
@@ -9,10 +10,11 @@ function Aside() {
     ]
     return (
         <>
+            <FormRegister />
             <div className='borderStyle asideStyle'>
                 {content.map((el, i) => <TagButton key={i} content={el.title}>{el.child}</TagButton>)}
-
             </div>
+
         </>
     )
 

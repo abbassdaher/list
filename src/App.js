@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './commponent/Header'
 import Body from './commponent/Body'
-import Aside from './commponent/Aside'
+import Aside from './commponent/sideMenu/Aside'
 
 
 function App() {
