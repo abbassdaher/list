@@ -11,9 +11,9 @@ function FormRegister() {
         <div className='borderStyle formStyle'>
             <form onSubmit={formHandler} >
                 <label>name: </label>
-                <input type="text" onChange={(e) => setDataForm({ name: e.target.value, mail: dataForm.email })} />
+                <input type="text" onChange={(e) => setDataForm({...dataForm , name: e.target.value })} />
                 <label>email: </label>
-                <input type="email" onChange={(e) => setDataForm({ name: dataForm.name, email: e.target.value })} />
+                <input type="email" onChange={(e) => setDataForm({ ...dataForm ,email: e.target.value })} />
                 <button className='submitForm'>submit</button>
             </form>
         </div>
